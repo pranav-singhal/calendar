@@ -1,2 +1,61 @@
-table td{border: 1px solid black;
+
+
+
+table{position:fixed;
+top:40vh;
+left:45vw;}
+
+p{
+  position: fixed;
+  top:10vh;
+  left:45vw;
+}
+
+
+#rewind_month{
+  position: fixed;
+  top:20vh;
+  left:40vw;
+
+}
+#forward_month{
+  position: fixed;
+  top:20vh;
+  left:66vw;
+}
+#rewind_year{
+  position: fixed;
+  top:26vh;
+  left:40vw;
+}
+
+
+#forward_year{
+  position: fixed;
+  top:26vh;
+  left:66vw;
+}
+
+table td{text-align: center;
 height:20px;}
+
+h1{ position:fixed;
+  width:375px;
+  text-transform: uppercase;
+  text-align: center;
+  top:13vh;
+  left:46.5vw;}
+
+
+#year{
+  top:20vh;
+  left:50vw;
+
+}
+
+#today{
+  position: fixed;
+  top:30vh;
+  left:50vw;
+
+}

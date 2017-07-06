@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My very cool Calendar</title>
-  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+
+<link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
 </head>
 <body>
   <p>
@@ -13,23 +17,23 @@
     </span>
   </p>
 
-  <button id="rewind_month">prev month</button>
-  <button id="forward_month">next month</button>
-  <button id="today">today</button><br />
-  <button id="rewind_year">previous year</button>
-  <button id="forward_year">next year</button>
+  <button class="mdl-button mdl-js-button mdl-button--primary" id="rewind_month">prev month</button>
+  <button class="mdl-button mdl-js-button mdl-button--primary" id="forward_month">next month</button>
+  <button class="mdl-button mdl-js-button mdl-button--accent" id="today">Go To Today</button><br />
+  <button class="mdl-button mdl-js-button mdl-button--primary" id="rewind_year">previous year</button>
+  <button class="mdl-button mdl-js-button mdl-button--primary" id="forward_year">next year</button>
 
-<table id="table">
-  <theader><h1 id="month">month</h1><h1 id="year">year</h1>
-    <th>Sunday</th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-    <th>Saturday</th>
+<table class="table-sm" id="table">
+  <thead class="thead"><h1 id="month">month</h1><h1 id="year">year</h1>
+    <th scope="row">Sunday</th>
+    <th scope="row">Monday</th>
+    <th scope="row">Tuesday</th>
+    <th scope="row">Wednesday</th>
+    <th scope="row">Thursday</th>
+    <th scope="row">Friday</th>
+    <th scope="row">Saturday</th>
 
-  </theader>
+  </thead>
     <tr><td id="sun1"></td><td id="mon1"><td id="tue1"></td></td><td id="wed1"></td><td id="thu1"></td><td id="fri1"></td><td id="sat1"></td></tr>
     <tr><td id="sun2"></td><td id="mon2"><td id="tue2"></td></td><td id="wed2"></td><td id="thu2"></td><td id="fri2"></td><td id="sat2"></td></tr>
     <tr><td id="sun3"></td><td id="mon3"><td id="tue3"></td></td><td id="wed3"></td><td id="thu3"></td><td id="fri3"></td><td id="sat3"></td></tr>
